@@ -1,5 +1,9 @@
 # Amortized Variational Transdimensional Inference
 
+The expressiveness of flow-based models combined with stochastic variational inference (SVI) has, in recent years, expanded the application of optimization-based Bayesian inference to include problems with complex data relationships. However, until now, SVI using flow-based models has been limited to problems of fixed dimension. We introduce CoSMIC, normalizing flows (COntextually-Specified Masking for Identity-mapped Components), an extension to neural autoregressive conditional normalizing flow architectures that enables using a single amortized variational density for inference over a transdimensional target distribution. We propose a combined stochastic variational transdimensional inference (VTI) approach to training CoSMIC flows using techniques from Bayesian optimization and Monte Carlo gradient estimation. Numerical experiments demonstrate the performance of VTI on challenging problems that scale to high-cardinality model spaces.
+
+[ArXiV link](https://arxiv.org/abs/2506.04749)
+
 ## Installation
 
 ```bash
