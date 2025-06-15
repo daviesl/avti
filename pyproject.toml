@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "avti"
+version = "0.1.0"
+description = ""
+authors = [
+    "Laurence Davies, laurence@latentlogic.com.au",
+    "Dan Mackinlay, dan.mackinlay@data61.csiro.au",
+    "Rafael Oliveira, rafael.dossantosdeoliveira@data61.csiro.au",
+    "Scott A. Sisson, scott.sisson@unsw.edu.au",
+]
+readme = "README.md"
+packages = [
+    { include = "vti" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11.0,<4.0.0"
+nflows = {git = "https://github.com/bayesiains/nflows.git"}
+torch = ">2.2.2,<2.5.0"
+matplotlib = "~3.9.0"
+seaborn = "~0.13.2"
+torchode = "~0.2.0"
+torchsde = "~0.2.6"
+torchdiffeq = "~0.2.4"
+numpy = "<2.0.0"
+pyro-ppl = "~1.9.1"
+cloudpickle = "~3.1.0"
+submitit = "^1.5.2"
+#jaxtyping = "^0.2.34"
+ax-platform = "~0.4.1"
+python-dotenv = "~1.0.1"
+# polars = "~1.16.0"
+marimo = "~0.10.0"
+pyarrow = "~18.1.0"
+tensorboard = "~2.18.0"
+tueplots = "^0.0.17"
+pandas = "^2.2.3"
+cdt = "^0.6.0"
+networkx = "^3.4.2"
+dagma = "^1.1.1"
+adabelief-pytorch = "^0.2.1"
+asyncio = "^3.4.3"
+pytest = "^8.3.5"
+
+
+[tool.poetry.group.dev.dependencies]
+ipdb = "~0.13.13"
+ipykernel = "~6.29.4"
+openai = "^1.57.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

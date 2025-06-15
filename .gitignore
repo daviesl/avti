@@ -1,0 +1,61 @@
+##
+## In the before-times we dumped losses here
+## no longer needed because we now have tensorboard
+# best_model_*.pt
+# best_model*.pt
+# loss_history_*.pt
+# *.npy
+
+# vim
+*.swp
+
+# secrets
+.env
+
+## intermediates
+
+#_logs
+#models
+#data/
+#debug/
+#jobs/
+# Ignore all subdirectories under _experiments/*
+_experiments/*/*
+# Except for paths that end with /outputs
+!_experiments/*/outputs
+
+
+# triple underscore for plz ignore
+___*
+
+# python nonsense
+venv*
+virtual-env/*
+__pycache__
+*.egg-info
+*.pyc
+.git
+*~
+*.aux
+*.log
+PKG-INFO
+*.pid
+.doit.*
+.ipynb_checkpoints
+.directory
+
+#R
+.Rproj*
+.Rhistory
+
+#OS
+.DS_Store
+
+# VS code
+.VSCodeCounter/
+# .vscode/
+
+/.luarc.json
+
+# ignore pickled tdfs
+tdf.pkl
